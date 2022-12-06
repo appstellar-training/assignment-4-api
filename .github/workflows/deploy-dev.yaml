@@ -1,9 +1,10 @@
-name: deploy
+name: deploy-dev
 
 on:
   push:
     branches:
     - dev
+  workflow_dispatch:
 
 env:
   AWS_REGION: eu-central-1

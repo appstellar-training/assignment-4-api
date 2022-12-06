@@ -1,0 +1,15 @@
+app:
+  ecr_uri: 313422618945.dkr.ecr.eu-central-1.amazonaws.com/devops-training-fabian/web-app
+  image_tag: latest
+  # certificate_arn: arn:aws:acm:eu-central-1:313422618945:certificate/c5b9bdb9-8002-49b1-bf65-6ebce1f0e44a
+
+  name: devops-training-fabian
+  hostname: api-dev.fabian.appstellar.training
+  ingressClassName: alb
+  port:
+    servicePort: 80
+    containerPort: 80
+  requestCpu: 75m
+  requestMem: 384Mi
+  limitCpu: 90m
+  limitMem: 500Mi
